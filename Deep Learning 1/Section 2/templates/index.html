@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/charts" method="get">
+        <h1>Data Visualization</h1>
+        <label for="chart-type">Select Chart Type:</label>
+        <select id="chart-type" name="type">
+            <option value="gantt">Gantt Chart</option>
+            <option value="bar">Bar Chart</option>
+            <option value="time_series">Time Series Chart</option>
+            <option value="time_series_animation">Time Series Chart LIVE</option>
+        </select>
+
+        <label for="country">Select Country:</label>
+        <select id="country" name="country">
+            <option value="Republic of Senegal">Republic of Senegal</option>
+            <option value="Republic of Serbia">Republic of Serbia</option>
+            <option value="Republic of Seychelles">Republic of Seychelles</option>
+            <option value="Republic of Sierra Leone">Republic of Sierra Leone</option>
+            <option value="Republic of Singapore">Republic of Singapore</option>
+            <option value="Republic of Slovenia">Republic of Slovenia</option>
+            <option value="Republic of South Africa">Republic of South Africa</option>
+            <option value="Republic of Suriname">Republic of Suriname</option>
+            <option value="Republic of Tajikistan">Republic of Tajikistan</option>
+            <option value="Republic of Trinidad and Tobago">Republic of Trinidad and Tobago</option>
+            <option value="Republic of Turkey">Republic of Turkey</option>
+            <option value="Republic of Uganda">Republic of Uganda</option>
+            <option value="Republic of Uzbekistan">Republic of Uzbekistan</option>
+            <option value="Republic of Vanuatu">Republic of Vanuatu</option>
+            <option value="Republic of Yemen">Republic of Yemen</option>
+            <option value="Republic of Zambia">Republic of Zambia</option>
+            <option value="Republic of Zimbabwe">Republic of Zimbabwe</option>
+            <option value="Republic of the Congo">Republic of the Congo</option>
+            <option value="Republic of the Gambia">Republic of the Gambia</option>
+            <option value="Republic of the Maldives">Republic of the Maldives</option>
+            <option value="Republic of the Marshall Islands">Republic of the Marshall Islands</option>
+            <option value="Republic of the Philippines">Republic of the Philippines</option>
+            <option value="Republic of the Sudan">Republic of the Sudan</option>
+            <option value="Republic of the Union of Myanmar">Republic of the Union of Myanmar</option>
+            <option value="Romania">Romania</option>
+            <option value="Russian Federation">Russian Federation</option>
+            <option value="Réunion Island">Réunion Island</option>
+            <option value="Saint Lucia">Saint Lucia</option>
+            <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+            <option value="Slovak Republic">Slovak Republic</option>
+            <option value="Socialist Republic of Vietnam">Socialist Republic of Vietnam</option>
+            <option value="Solomon Islands">Solomon Islands</option>
+            <option value="South Sudan">South Sudan</option>
+            <option value="State of Eritrea">State of Eritrea</option>
+            <option value="State of Israel">State of Israel</option>
+            <option value="State of Kuwait">State of Kuwait</option>
+            <option value="State of Libya">State of Libya</option>
+            <option value="State of Palestine">State of Palestine</option>
+            <option value="State of Qatar">State of Qatar</option>
+            <option value="Sultanate of Oman">Sultanate of Oman</option>
+            <option value="Swiss Confederation">Swiss Confederation</option>
+            <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+            <option value="Territory of Norfolk Island">Territory of Norfolk Island</option>
+            <option value="Togolese Republic">Togolese Republic</option>
+            <option value="Tunisian Republic">Tunisian Republic</option>
+            <option value="Turkmenistan">Turkmenistan</option>
+            <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="Union of the Comoros">Union of the Comoros</option>
+            <option value="United Arab Emirates">United Arab Emirates</option>
+            <option value="United Kingdom of Great Britain and Northern Ireland">United Kingdom of Great Britain and Northern Ireland</option>
+            <option value="United Mexican States">United Mexican States</option>
+            <option value="United Republic of Tanzania">United Republic of Tanzania</option>
+            <option value="United States of America">United States of America</option>
+            <option value="Vatican City State">Vatican City State</option>
+            <option value="Virgin Islands">Virgin Islands</option>
+            <option value="Virgin Islands of the United States">Virgin Islands of the United States</option>
+            <option value="Åland Islands">Åland Islands</option>
+        </select>
+
+        <button type="submit">Show Charts</button>
+    </form>
+</body>
+
+</html>
